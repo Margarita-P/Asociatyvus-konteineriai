@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <sstream>
 #include <fstream>
@@ -43,11 +44,12 @@ void read(vector <string> &url, map <string, pair <set<int>, int>>& words)
 void print(vector <string> url, map <string, pair <set<int>, int>> words)
 {   
     ofstream out ("rez.txt");
+    out << "Cross-reference lentele: " << endl;
     for(auto& word : words)
     {
         if (word.second.second > 1)
         {
-            out << "Word: " << word.first << " Count: " << word.second.second << " Lines: ";
+            out << "Word: " << word.first << setw(20) << " Count: " << word.second.second << setw(20) << " Lines: ";
             for(auto line_number : word.second.first)
                     out << line_number << " ";
             out << endl;
