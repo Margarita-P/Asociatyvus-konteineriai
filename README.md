@@ -4,7 +4,7 @@
 ### Atliekamos funkcijos  
 - Atrandami url, pilna ir sutrumpintomis formomis (pvz.: www.puslapis.com arba https://puslapis.com/.  
 - Skaičiuojama kiek ir kokie žodžiai pasikartoja tekste.   
-- Sukuriama lentelė, kuri parodo kiek kartų, kurioje eilutėje pasikartoja tam tikras žodis.  
+- Sukuriama lentelė, kuri parodo kiek kartų, kurioje eilutėje pasikartoja tam tikras žodis. Ši lentelė išvedama į rez.txt failą.    
 - Į ekraną išvedami visi rasti URL.  
 
 Tekstas yra saugomas duomenys.txt faile, o programa main.cpp faile.  
